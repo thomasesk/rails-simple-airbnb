@@ -1,0 +1,53 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.infos {
+  display: flex;
+}
+
+.card {
+  margin: 20px;
+}
+
+.card-wide {
+  padding: 20px;
+  width: 95%;
+}
+
+.card-home {
+  box-shadow: 1px 2px grey;
+  width: 28% !important;
+}
+
+.cards-home {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.price {
+  margin-left: 20px;
+}
+
+.wrapper {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.flat-show-card {
+  width: 300px;
+  height: 210px;
+  padding: 20px;
+}
+
+.all-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -100px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}

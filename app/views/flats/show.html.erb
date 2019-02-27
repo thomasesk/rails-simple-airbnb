@@ -1,0 +1,35 @@
+<div class="all-cards">
+  <div class="cards-left">
+    <div class="card card-wide">
+        <h5 class="card-title"><%= @flat.name %></h5>
+        <p class="card-text"><%= @flat.address %></p>
+    </div>
+    <div class="card card-wide">
+        <h5 class="card-title">A bit more about this flat</h5>
+        <p class="card-text"><%= @flat.description %></p>
+    </div>
+    <div class="card card-wide">
+      <h5>Details</h5>
+      <div class="infos">
+        <p class="card-text guests"><i class="fas fa-user-alt"></i>    <%=@flat.number_of_guests %></p>
+        <p class="card-text price"><i class="fas fa-euro-sign"></i>    <%= @flat.price_per_night %></p>
+      </div>
+    </div>
+  </div>
+  <div class="card-right">
+    <div class="card flat-show-card">
+      <h5>Book this place!</h5>
+      <form action="">
+        <div class="input-group">
+          <span style="margin-right: 20px;">From:</span>
+          <input type="text" class="form-control" placeholder="12/10/2017" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mt-2">
+          <span style="margin-right: 20px">To:</span>
+          <input type="text" class="form-control" placeholder="18/10/2017" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+      </form>
+    </div>
+  </div>
+</div>

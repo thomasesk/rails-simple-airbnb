@@ -1,0 +1,12 @@
+<h1>Make it count mate</h1>
+<%= simple_form_for (@flat) do |f| %>
+  <%= f.input :name, placeholder: 'Name', error: 'Name is mandatory, please specify one', label: false %>
+  <%= f.input :address, placeholder: 'Address', label: false %>
+  <%= f.input :description, placeholder: 'Please describe your flat briefly', label: false %>
+  <%= f.input :price_per_night, placeholder: 'Price per Night', label: false %>
+  <%= f.input :number_of_guests, placeholder: 'Number of guests that you can host', label: false %>
+  <div class="buttons">
+    <button type="button" class="btn btn-block btn-outline-success"><%= f.button :submit%></button>
+  </div>
+<% end %>
+
